@@ -1,0 +1,16 @@
+{
+  "name": "hardhat-project",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "node": "npx hardhat node", 
+    "deploy:localhost": "npx hardhat run scripts/deploy.ts --network localhost", 
+    "deploy:berachain": "npx hardhat run scripts/deploy.ts --network berachainTestnet", 
+    "test": "npx hardhat test",
+    "verify": "npx hardhat verify --network berachainTestnet" 
+  }, 
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.5"
+  }
+}
