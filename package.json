@@ -6,7 +6,12 @@
     "deploy:localhost": "npx hardhat run scripts/deploy.ts --network localhost", 
     "deploy:berachain": "npx hardhat run scripts/deploy.ts --network berachainTestnet", 
     "test": "npx hardhat test",
-    "verify": "npx hardhat verify --network berachainTestnet" 
+    "verify": "npx hardhat verify --network berachainTestnet",
+
+    "git:add": "git add .",
+    "git:commit": "git commit -m \"Commit message\"",
+    "git:push": "git push origin main",
+    "git:all": "npm run git:add && npm run git:commit && npm run git:push"
   }, 
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
